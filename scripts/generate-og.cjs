@@ -106,9 +106,9 @@ async function generateOG() {
 
       <!-- Domain Link Badge -->
       <g transform="translate(0, 235)">
-        <rect width="210" height="38" rx="8" fill="#141414" stroke="rgba(255,255,255,0.14)" stroke-width="1" />
-        <text x="18" y="24" font-family="'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600" fill="#ffffff" letter-spacing="0.02em">amq.digitalnexes.com</text>
-        <path d="M182 19l4-4-4-4m4 4h-9" stroke="#888888" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+        <rect width="250" height="38" rx="8" fill="#141414" stroke="rgba(255,255,255,0.14)" stroke-width="1" />
+        <text x="18" y="24" font-family="'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600" fill="#ffffff" letter-spacing="0.02em">aayanmq-portfolio.vercel.app</text>
+        <path d="M222 19l4-4-4-4m4 4h-9" stroke="#888888" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round" />
       </g>
     </g>
   </svg>
@@ -143,3 +143,4 @@ generateOG().catch(err => {
   console.error('Error generating OG image:', err);
   process.exit(1);
 });
+
