@@ -331,21 +331,25 @@ const FEATURED_WORKS = [
     name: 'Bookify',
     desc: 'SaaS project mainly focusing the user flow from a user perspective to acheive modern and simple experiance.',
     img: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=900&q=80&fit=crop',
+    link: 'https://bookify-amq.vercel.app/',
   },
   {
     name: 'Remindly',
     desc: 'A reminder App Designed in figma showcasing modern designing and ui skills',
     img: 'https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=900&q=80&fit=crop',
+    link: 'https://www.figma.com/design/Nk08hZUKWjze1tbLHwDKpK/Portfolio-Work-AMQ?node-id=63-5&t=5wO53CSkwrn0dAVU-1',
   },
   {
     name: 'ESAC',
     desc: 'Web Desing for an Architectural Firm showcasing UI and modern designing and animations',
     img: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=900&q=80&fit=crop',
+    link: 'https://esaconsultants.vercel.app/',
   },
   {
     name: 'NexCafe',
     desc: 'a web design for a premium resturants focusing on order flow, animations and UI',
     img: 'https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=900&q=80&fit=crop',
+    link: 'https://thenexcafe.vercel.app/',
   },
 ];
 
@@ -373,19 +377,22 @@ function AwardsSection() {
 
         <div className="awards-right featured-work-list fade-up" onMouseMove={handleMouseMove}>
           {FEATURED_WORKS.map((work) => (
-            <div
+            <a
+              href={work.link}
+              target="_blank"
+              rel="noopener noreferrer"
               className="project-work-item"
               key={work.name}
               onMouseEnter={() => setActiveWork(work)}
               onMouseLeave={() => setActiveWork(null)}
-              tabIndex={0}
+              style={{ textDecoration: 'none', color: 'inherit' }}
             >
               <div className="project-work-title-wrap">
                 <span className="project-work-name">{work.name}</span>
                 <span className="project-work-arrow" aria-hidden="true">↗</span>
               </div>
               <div className="project-work-desc">{work.desc}</div>
-            </div>
+            </a>
           ))}
         </div>
       </div>
